@@ -14,25 +14,25 @@ def adder_page():
         exam2 = None
         desired_grade = None
         try: 
-            hw = float(request.form["HW grade (%)"])
+            hw = float(request.form["hw"])
         except:
-            errors += "<p>{!r} is not a number.</p>\n".format(request.form["HW grade"])
+            errors += "<p>{!r} is not a number.</p>\n".format(request.form["hw"])
         try: 
-            quiz = float(request.form["Quiz grade (%)"])
+            quiz = float(request.form["quiz"])
         except:
-            errors += "<p>{!r} is not a number.</p>\n".format(request.form["Quiz grade"])     
+            errors += "<p>{!r} is not a number.</p>\n".format(request.form["quiz"])     
         try: 
-            exam1 = float(request.form["Exam 1 grade (%)"])
+            exam1 = float(request.form["exam1"])
         except:
-            errors += "<p>{!r} is not a number.</p>\n".format(request.form["Exam 1 grade"])               
+            errors += "<p>{!r} is not a number.</p>\n".format(request.form["exam1"])               
         try: 
-            exam2 = float(request.form["Exam 2 grade (%)"])
+            exam2 = float(request.form["exam2"])
         except:
-            errors += "<p>{!r} is not a number.</p>\n".format(request.form["Exam 2 grade"])       
+            errors += "<p>{!r} is not a number.</p>\n".format(request.form["exam2"])       
         try: 
-            desired_grade = float(request.form["Desired final grade (%)"])
+            desired_grade = float(request.form["desired_grade"])
         except:
-            errors += "<p>{!r} is not a number.</p>\n".format(request.form["Desired grade"])
+            errors += "<p>{!r} is not a number.</p>\n".format(request.form["desired_grade"])
             
             
         if hw is not None and quiz is not None and exam1 is not None and exam2 is not None and desired_grade is not None:
