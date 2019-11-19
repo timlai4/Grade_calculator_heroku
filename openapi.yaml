@@ -1,0 +1,23 @@
+openapi: "3.0.0"
+
+info:
+  title: "Grade Calculator"
+  description: "API that calculates students' current grade in M311 and what they need on the final exam to get their desired grade."
+  version: "1.0"
+
+paths:
+  /extractpackages:
+    post:
+      description: "Calculates grades"
+
+      requestBody:
+        description: "Current grades as percentages"
+        required: true
+        content:
+          application/json: {}
+
+      responses:
+        '200':
+          description: "Returns current course grade and target final grade"
+          content: 
+           application/json: {}
