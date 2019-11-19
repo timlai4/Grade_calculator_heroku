@@ -54,11 +54,11 @@ def adder_page():
                 {errors}
                 <p>Enter your grades as a percentage:</p>
                 <form method="post" action=".">
-                    <p><input name="HW" /></p>
-                    <p><input name="Quiz" /></p>
-                    <p><input name="Exam 1" /></p>
-                    <p><input name="Exam 2" /></p>
-                    <p><input name="Desired grade" /></p>
+                    <p><input name="hw" /></p>
+                    <p><input name="quiz" /></p>
+                    <p><input name="exam1" /></p>
+                    <p><input name="exam2" /></p>
+                    <p><input name="desired_grade" /></p>
                     <p><input type="submit" value="Do calculation" /></p>
                 </form>
             </body>
