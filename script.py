@@ -43,7 +43,7 @@ def adder_page():
                     <body>
                         <p>Your current grade is {}%</p>
                         <p>To get a {}%, you need a {}% on the final exam. </p>
-                        <p><a href="/">Click here to calculate again</a>
+                        <p><a href="/">Click here to recalculate</a>
                     </body>
                 </html>
             '''.format(current_grade, desired_grade, final)
